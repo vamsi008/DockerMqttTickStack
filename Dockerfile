@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y supervisor net-tools
 # Configure supervisord
 ADD ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-ADD ./telegraf.conf /opt/telegraf/telegraf.conf
+ADD ./telegraf.conf /etc/telegraf/telegraf.conf
 
 
 EXPOSE  80
